@@ -1,0 +1,26 @@
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+.radio-button:non-selected {
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+}
+
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-padding: 2px;
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #007bff;
+}
+
+.radio-button:focused .radio {
+    -fx-border-color: #007bff;
+    -fx-border-width: 3px;
+}
