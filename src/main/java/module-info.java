@@ -8,6 +8,7 @@ module sample.dataencryption {
     requires jdk.crypto.ec;
     requires java.desktop;
     requires org.apache.commons.lang3;
+    requires java.compiler;
 
     opens sample.dataencryption to javafx.fxml;
     exports sample.dataencryption;
