@@ -17,37 +17,37 @@
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-swing</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-web</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-media</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-base</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-graphics</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -82,10 +82,6 @@
         <configuration>
           <source>20</source>
           <target>20</target>
-          <compilerArgs>
-            <arg>--add-modules</arg>
-            <arg>javafx.controls,javafx.fxml</arg>
-          </compilerArgs>
         </configuration>
       </plugin>
       <plugin>
