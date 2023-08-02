@@ -410,7 +410,7 @@ public class Controller {
         }
     }
 
-    /* --- Процес створення jar-файла дешифратора даних на накопичувачі */
+    /* --- Процес створення jar-файлу дешифратора даних на накопичувачі */
     private String getDecodeSecretKeyToJar() {
         SecretKey secretKey = getSecretKey();
         byte[] encodedKey = secretKey.getEncoded();
