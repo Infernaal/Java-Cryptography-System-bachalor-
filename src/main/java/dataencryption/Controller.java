@@ -192,7 +192,7 @@ public class Controller {
                 String driveDescription = fsv.getSystemTypeDescription(drive);
                 long totalSpace = drive.getTotalSpace();
                 long freeSpace = drive.getFreeSpace();
-                String iconPath = "src\\image\\disc.png";
+                String iconPath = "D:\\JavaCryptographySystem\\src\\image\\disc.png";
                 Image icon = new Image(new FileInputStream(iconPath));
                 DriveInfo driveInfo = new DriveInfo(driveName, driveDescription, totalSpace, freeSpace, icon);
                 flashDriveListView.setCellFactory(listView -> new DriveInfoCell());
@@ -221,7 +221,7 @@ public class Controller {
         Label headerLabel = new Label("About Us");
         headerLabel.setStyle("-fx-font-weight: bold; -fx-font-size: 16px");
 
-        Image image = new Image("file:src\\image\\dev.png");
+        Image image = new Image("D:\\JavaCryptographySystem\\src\\image\\dev.png");
         ImageView imageView = new ImageView(image);
 
         Label aboutLabel = new Label("All rights reserved. © This application was created by Infernum.");
