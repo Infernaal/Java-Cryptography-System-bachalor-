@@ -1,0 +1,16 @@
+.progress-bar {
+    -fx-accent: #2196F3;
+    -fx-background-color: #E0E0E0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #1976D2, #2196F3);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 2px;
+}
+
+.progress-bar .track {
+    -fx-background-color: #E0E0E0;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 2px;
+}
