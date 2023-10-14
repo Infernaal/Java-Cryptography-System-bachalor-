@@ -15,7 +15,7 @@ public class Main extends Application {
         AnchorPane root = fxmlLoader.load();
         Scene scene = new Scene(root, 450, 736);
         stage.setTitle("SecureCryptDevice");
-        Image icon = new Image("file:src\\image\\icon.png");
+        Image icon = new Image("D:\\DataEncryption\\src\\image\\icon.png");
         stage.getIcons().add(icon);
 
         stage.setOnShown(event -> {
