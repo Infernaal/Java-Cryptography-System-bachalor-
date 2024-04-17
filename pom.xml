@@ -65,7 +65,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>sample.dataencryption.Main</mainClass>
+              <mainClass>sample.dataencryption.MainStart</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -92,10 +92,54 @@
           <execution>
             <id>default-cli</id>
             <configuration>
-              <mainClass>sample.dataencryption.Main</mainClass>
+              <mainClass>sample.dataencryption.MainStart</mainClass>
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <archive>
+            <manifest>
+              <mainClass>sample.dataencryption.MainStart</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.github.wvengen</groupId>
+        <artifactId>proguard-maven-plugin</artifactId>
+        <version>2.6.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals><goal>proguard</goal></goals>
+          </execution>
+        </executions>
+        <configuration>
+          <obfuscate>true</obfuscate>
+          <injar>DataEncryption-1.0-SNAPSHOT-jar-with-dependencies.jar</injar>
+          <outjar>DataEncryption.jar</outjar>
+          <outputDirectory>${project.build.directory}</outputDirectory>
+          <proguardInclude>${basedir}/proguard.pro</proguardInclude>
+          <libs>
+            <lib>C:/Program Files/Java/jre-1.8/lib/rt.jar</lib>
+            <lib>C:/Program Files/Java/jre-1.8/lib/jsse.jar</lib>
+          </libs>
+        </configuration>
       </plugin>
     </plugins>
   </build>
